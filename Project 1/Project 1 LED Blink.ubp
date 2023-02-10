@@ -1,0 +1,15 @@
+module main
+author unknown
+version 1 0 
+description ''
+
+script 72 42 {
+whenStarted
+repeat 10 {
+  digitalWriteOp 16 true
+  waitMillis 500
+  digitalWriteOp 16 false
+  waitMillis 500
+}
+}
+
